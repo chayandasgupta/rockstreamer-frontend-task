@@ -1,6 +1,6 @@
+import { Icons } from "@/components/Icon";
 import { cn } from "@/lib/utils";
 import { cva } from "class-variance-authority";
-import { Loader2 } from "lucide-react";
 
 const buttonStyles = cva(
   "font-semibold flex items-center justify-center space-x-2 transform transition-all duration-200 focus:outline-none cursor-pointer",
@@ -62,7 +62,7 @@ export const Button = ({
       {...rest}
     >
       {loading ? (
-        <Loader2 className="w-5 h-5 animate-spin text-white" aria-label="Loading" />
+        <Icons.loader className="w-5 h-5 animate-spin text-white" aria-label="Loading" />
       ) : icon && iconPosition === "left" ? (
         icon
       ) : null}

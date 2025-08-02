@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Icons } from "@/components/Icon";
 import { useCallback, useRef } from "react";
 import { Button } from "./ui/Button";
 
@@ -34,7 +34,7 @@ export const ScrollContainer = ({ children }) => {
         variant="scroll"
         className="left-0 rounded-r-md"
         aria-label="Scroll left"
-        icon={<ChevronLeft className="w-6 h-6" />}
+        icon={<Icons.chevronLeft className="w-6 h-6" />}
       />
 
       {/* Right Scroll Button */}
@@ -44,7 +44,7 @@ export const ScrollContainer = ({ children }) => {
         variant="scroll"
         className="right-0 rounded-l-md"
         aria-label="Scroll right"
-        icon={<ChevronRight className="w-6 h-6" />}
+        icon={<Icons.chevronRight className="w-6 h-6" />}
       />
 
       {/* Scrollable content */}

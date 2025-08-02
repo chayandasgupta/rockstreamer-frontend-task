@@ -1,6 +1,6 @@
+import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/Button";
 import { Tag } from "@/components/ui/Tag";
-import { Info, Play, Star } from "lucide-react";
 
 export const HeroContent = ({ movie }) => {
   if (
@@ -26,7 +26,7 @@ export const HeroContent = ({ movie }) => {
         <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 mb-4 sm:mb-6">
           <Tag
             icon={
-              <Star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 fill-current" />
+              <Icons.star className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 fill-current" />
             }
             className="gap-1.5"
             aria-label={`Rating: ${rating} stars`}
@@ -49,7 +49,7 @@ export const HeroContent = ({ movie }) => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start px-4 sm:px-0">
           <Button
             variant="primary"
-            icon={<Play className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />}
+            icon={<Icons.play className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />}
             aria-label="Play movie"
             fullWidth
           >
@@ -58,7 +58,7 @@ export const HeroContent = ({ movie }) => {
 
           <Button
             variant="secondary"
-            icon={<Info className="w-5 h-5 sm:w-6 sm:h-6 text-white" />}
+            icon={<Icons.info className="w-5 h-5 sm:w-6 sm:h-6 text-white" />}
             aria-label="More information about the movie"
             fullWidth
           >

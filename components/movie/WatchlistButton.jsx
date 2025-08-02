@@ -1,4 +1,4 @@
-import { Plus } from "lucide-react";
+import { Icons } from "@/components/Icon";
 
 export const WatchlistButton = ({ 
   isInWatchlist, 
@@ -17,7 +17,7 @@ export const WatchlistButton = ({
         ${className}
       `}
     >
-      <Plus className="w-4 h-4" />
+      <Icons.plus className="w-4 h-4" />
       <span>
         {isInWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
       </span>

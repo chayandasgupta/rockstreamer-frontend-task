@@ -22,11 +22,11 @@ export const HeroBannerBackground = ({ title, backdropUrl }) => {
           onLoad={() => setImageLoaded(true)}
         />
       </div>
-      {/* Mobile-optimized Gradient Overlays */}
+
+      {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-black/40 sm:from-black/90 sm:via-black/60 sm:to-black/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/50 sm:from-black/80 sm:to-black/30" />
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-transparent to-purple-900/30 sm:from-black/40 sm:to-purple-900/20" />
-      {/* Bottom fade - stronger on mobile */}
       <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-t from-black via-black/70 to-transparent sm:via-black/50" />
     </div>
   );

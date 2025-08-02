@@ -1,4 +1,4 @@
-import { Play } from "lucide-react";
+import { Icons } from "@/components/Icon";
 
 export const PlayButton = ({ onPlay, title, className = "" }) => {
   return (
@@ -12,7 +12,7 @@ export const PlayButton = ({ onPlay, title, className = "" }) => {
       `}
       aria-label={`Play ${title}`}
     >
-      <Play className="w-8 sm:w-10 h-8 sm:h-10 text-gray-800 fill-gray-800 ml-1" />
+      <Icons.play className="w-8 sm:w-10 h-8 sm:h-10 text-gray-800 fill-gray-800 ml-1" />
     </button>
   );
 };

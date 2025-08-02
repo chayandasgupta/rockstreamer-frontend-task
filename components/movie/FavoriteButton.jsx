@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Icons } from "@/components/Icon";
 
 export const FavoriteButton = ({ 
   isFavorite, 
@@ -17,7 +17,7 @@ export const FavoriteButton = ({
       `}
       aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
     >
-      <Heart
+      <Icons.heart
         className={`
           ${size} transition-all duration-300
           ${isFavorite
