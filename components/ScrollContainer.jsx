@@ -1,7 +1,7 @@
 "use client";
 
 import { Icons } from "@/components/Icon";
-import { Button } from "@/componentsui/Button";
+import { Button } from "@/components/ui/Button";
 import { useCallback, useRef } from "react";
 
 export const ScrollContainer = ({ children }) => {
