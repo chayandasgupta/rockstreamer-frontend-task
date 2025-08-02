@@ -2,7 +2,7 @@
 
 A modern, responsive movie streaming platform built with Next.js and TMDB API. Features include horizontal scrolling, smooth animations, and a rich user interface.
 
-![Project Preview](public/app.png)
+[![Live Preview](public/app.png)](https://rockstreamer-task.vercel.app/)
 
 ## 🚀 Features
 
