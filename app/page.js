@@ -13,7 +13,7 @@ export default function HomePage() {
 
       {/* Treanding Movies Section */}
       <section
-        className="px-4 md:px-8 lg:px-12 pb-8"
+        className="px-4 md:px-8 lg:px-12 pb-14"
         aria-label="Trending Movies"
       >
         <h2 className="text-white text-xl md:text-2xl font-bold mb-4">

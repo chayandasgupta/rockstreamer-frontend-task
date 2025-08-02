@@ -3,7 +3,7 @@
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
 import { useEffect, useRef } from "react";
 import { DisplayError } from "./DisplayError";
-import { MovieCard } from "./MovieCard";
+import { MovieCard } from "./movie/MovieCard";
 import { ScrollContainer } from "./ScrollContainer";
 import { SkeletonMovieGrid } from "./SkeletonMovieGrid";
 import { EndOfContentIndicator } from "./ui/EndOfContentIndicator";

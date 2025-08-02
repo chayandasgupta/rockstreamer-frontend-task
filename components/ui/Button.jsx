@@ -8,13 +8,13 @@ const buttonStyles = cva(
     variants: {
       variant: {
         primary:
-          "bg-[#B20710] text-white hover:bg-[#D20812] shadow-[#B20710]/70 hover:shadow-[#D20812]/90 px-6 py-3 sm:px-8 sm:py-4",
+          "bg-primary rounded-md text-white hover:bg-secondary shadow-primary/70 hover:shadow-secondary/90 px-6 py-3 sm:px-8 sm:py-4",
         secondary:
-          "bg-[#1F1F1F] text-white border border-[#E50914] hover:bg-[#D20812] shadow-[#D20812]/40 hover:shadow-[#E50914]/70 px-6 py-3 sm:px-8 sm:py-4",
+          "bg-tertiary rounded-md text-white border border-secondary hover:bg-secondary shadow-secondary/40 hover:shadow-secondary/70 px-6 py-3 sm:px-8 sm:py-4",
         error:
           "bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors duration-200",
         scroll:
-          "absolute top-1/2 -translate-y-1/2 z-10 bg-black/50 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/70 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/50",
+          "absolute top-1/2 -translate-y-1/2 z-10 bg-tertiary/50 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-tertiary/70 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/50",
       },
       size: {
         sm: "px-3 py-1.5 text-sm",

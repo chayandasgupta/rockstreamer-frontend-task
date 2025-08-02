@@ -45,7 +45,7 @@ export const MovieCardHoverOverlay = ({
         </div>
 
         {/* Bottom Watchlist Button */}
-        <div className="mb-16">
+        <div className="mb-8 sm:mb-16">
           <WatchlistButton
             isInWatchlist={isFavorite}
             onToggle={onFavoriteToggle}

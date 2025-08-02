@@ -28,7 +28,7 @@ export const SkeletonMovieCard = ({
         />
 
         {/* Bottom overlay with title and year */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent pt-8 pb-3 px-3">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tertiary/90 via-tertiary/70 to-transparent pt-8 pb-3 px-3">
           <div className="space-y-2">
             {/* Title skeleton */}
             <div className="space-y-1">
