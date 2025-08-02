@@ -2,7 +2,7 @@
 
 A modern, responsive movie streaming platform built with Next.js and TMDB API. Features include horizontal scrolling, smooth animations, and a rich user interface.
 
-![Project Preview](public/banner.jpg)
+![Project Preview](public/app.png)
 
 ## 🚀 Features
 
