@@ -15,8 +15,7 @@ export default function MovieRow({ initialMovies }) {
   const observerRef = useRef();
 
   useEffect(() => {
-    if (loading) return;
-    if (!hasMore) return;
+    if (loading || !hasMore) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,6 +35,7 @@ export default function MovieRow({ initialMovies }) {
 
     return () => {
       if (current) observer.unobserve(current);
+      observer.disconnect();
     };
   }, [loading, hasMore, loadNextPage]);
 
@@ -44,38 +44,36 @@ export default function MovieRow({ initialMovies }) {
   }
 
   return (
-    <>
-      <ScrollContainer>
-        {movies.map((movie, index) => (
-          <MovieCard
-            key={`${movie.id}-${index}`}
-            movie={movie}
-            priority={index < 6}
-          />
-        ))}
+    <ScrollContainer>
+      {movies.map((movie, index) => (
+        <MovieCard
+          key={`${movie.id}-${index}`}
+          movie={movie}
+          priority={index < 6}
+        />
+      ))}
 
-        {/* Pagination Error - Show error inline */}
-        {error && movies.length > 0 && (
-          <DisplayError
-            error="Failed to load more"
-            onRetry={retry}
-            layout="horizontal"
-          />
-        )}
+      {/* Pagination Error - Show error inline */}
+      {error && movies.length > 0 && (
+        <DisplayError
+          error="Failed to load more"
+          onRetry={retry}
+          layout="horizontal"
+        />
+      )}
 
-        {/* Pagination Loading Skeletons */}
-        {loading && movies.length > 0 && !error && (
-          <SkeletonMovieGrid count={3} />
-        )}
+      {/* Pagination Loading Skeletons */}
+      {loading && movies.length > 0 && !error && (
+        <SkeletonMovieGrid count={3} />
+      )}
 
-        {/* End of Content Indicator */}
-        {!hasMore && !loading && !error && movies.length > 0 && (
-          <EndOfContentIndicator />
-        )}
+      {/* End of Content Indicator */}
+      {!hasMore && !loading && !error && movies.length > 0 && (
+        <EndOfContentIndicator />
+      )}
 
-        {/* Intersection Observer sentinel */}
-        <div ref={observerRef} aria-hidden="true" />
-      </ScrollContainer>
-    </>
+      {/* Intersection Observer sentinel */}
+      <div ref={observerRef} aria-hidden="true" />
+    </ScrollContainer>
   );
 }

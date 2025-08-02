@@ -49,8 +49,6 @@ export const ScrollContainer = ({ children }) => {
       <div
         ref={scrollContainerRef}
         className="scroll-container scrollbar-hide"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        tabIndex={0}
         aria-label="Scrollable content section"
       >
         {children}
