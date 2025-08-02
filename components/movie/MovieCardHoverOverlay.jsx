@@ -1,6 +1,6 @@
-import { FavoriteButton } from "./FavoriteButton";
+import { FavouriteButton } from "./FavouriteButton";
+import { FavouriteIconButton } from "./FavouriteIconButton";
 import { PlayButton } from "./PlayButton";
-import { WatchlistButton } from "./WatchlistButton";
 
 export const MovieCardHoverOverlay = ({
   isVisible,
@@ -33,7 +33,7 @@ export const MovieCardHoverOverlay = ({
       >
         {/* Top Right Favorite */}
         <div className="flex justify-end">
-          <FavoriteButton
+          <FavouriteIconButton
             isFavorite={isFavorite}
             onToggle={onFavoriteToggle}
           />
@@ -46,8 +46,8 @@ export const MovieCardHoverOverlay = ({
 
         {/* Bottom Watchlist Button */}
         <div className="mb-8 sm:mb-16">
-          <WatchlistButton
-            isInWatchlist={isFavorite}
+          <FavouriteButton
+            isInfavouritelist={isFavorite}
             onToggle={onFavoriteToggle}
           />
         </div>

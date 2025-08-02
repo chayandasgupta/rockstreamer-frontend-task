@@ -1,8 +1,8 @@
 "use client";
 
 import { Icons } from "@/components/Icon";
+import { Button } from "@/componentsui/Button";
 import { useCallback, useRef } from "react";
-import { Button } from "./ui/Button";
 
 export const ScrollContainer = ({ children }) => {
   const scrollContainerRef = useRef(null);
@@ -27,7 +27,6 @@ export const ScrollContainer = ({ children }) => {
 
   return (
     <div className="relative group">
-      {/* Left Scroll Button */}
       <Button
         onClick={() => scroll("left")}
         size="sm"
@@ -37,7 +36,6 @@ export const ScrollContainer = ({ children }) => {
         icon={<Icons.chevronLeft className="w-6 h-6" />}
       />
 
-      {/* Right Scroll Button */}
       <Button
         onClick={() => scroll("right")}
         size="sm"

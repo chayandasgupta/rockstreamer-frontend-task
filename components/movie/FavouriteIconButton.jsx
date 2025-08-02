@@ -1,6 +1,6 @@
 import { Icons } from "@/components/Icon";
 
-export const FavoriteButton = ({ 
+export const FavouriteIconButton = ({ 
   isFavorite, 
   onToggle, 
   className = "",

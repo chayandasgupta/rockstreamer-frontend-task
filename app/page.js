@@ -4,7 +4,7 @@ import { ManageTrendingMovie } from "@/feature/trending-movies/components/Manage
 import { featuredMovie } from "@/lib/data/movies";
 import { Suspense } from "react";
 
-export const revalidate = 3600; // Revalidate every hour
+export const revalidate = 3600; 
 
 export default function HomePage() {
   return (

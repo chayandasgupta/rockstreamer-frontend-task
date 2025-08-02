@@ -41,7 +41,6 @@ export const MovieCard = memo(({ movie = {}, priority = false }) => {
           className={`${isHovered ? "scale-110" : "scale-100"}`}
         />
 
-        {/* Enhanced Bottom title & year (always visible) */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent pt-8 pb-3 px-3">
           <MovieInfo movie={movie} />
         </div>
