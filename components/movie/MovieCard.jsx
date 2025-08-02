@@ -26,9 +26,6 @@ export const MovieCard = memo(({ movie = {}, priority = false }) => {
   return (
     <div
       className="relative flex-shrink-0 cursor-pointer transition-all duration-300 group"
-      style={{
-        transform: isHovered ? "scale(1.05)" : "scale(1)",
-      }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="button"
@@ -41,7 +38,7 @@ export const MovieCard = memo(({ movie = {}, priority = false }) => {
           src={posterUrl}
           alt={movie.title || movie.name || "Unknown Title"}
           priority={priority}
-          className={isHovered ? "scale-110" : "scale-100"}
+          className={`${isHovered ? "scale-110" : "scale-100"}`}
         />
 
         {/* Enhanced Bottom title & year (always visible) */}
