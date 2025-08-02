@@ -4,7 +4,7 @@ import { ManageTrendingMovie } from "@/feature/trending-movies/components/Manage
 import { featuredMovie } from "@/lib/data/movies";
 import { Suspense } from "react";
 
-export const revalidate = 60;
+export const revalidate = 3600; // Revalidate every hour
 
 export default function HomePage() {
   return (
@@ -17,7 +17,7 @@ export default function HomePage() {
         aria-label="Trending Movies"
       >
         <h2 className="text-white text-xl md:text-2xl font-bold mb-4">
-          Trending Movies {new Date().toLocaleTimeString()}
+          Trending Movies 
         </h2>
 
         <Suspense
